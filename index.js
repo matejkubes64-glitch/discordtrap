@@ -1,5 +1,11 @@
-
+const http = require('http');
 const { Client, GatewayIntentBits } = require('discord.js');
+
+// Mini webový server, aby Render nehlásil chybu "Port scan timeout"
+http.createServer((req, res) => {
+    res.write("Bot bezi!");
+    res.end();
+}).listen(process.env.PORT || 10000);
 
 const client = new Client({
     intents: [
