@@ -18,7 +18,7 @@ const client = new Client({
 
 // !!! SEM DOPLŇ SVOJE ÚDAJE !!!
 const BOT_TOKEN = process.env.BOT_TOKEN; 
-const BAN_CHANNEL_ID = '1508951807479513199'; 
+const BAN_CHANNEL_ID = '1509021617207119922'; 
 
 client.once('ready', () => {
     console.log(`Bot je online jako ${client.user.tag}!`);
